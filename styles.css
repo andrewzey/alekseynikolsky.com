@@ -30,6 +30,7 @@ a.selected {}
   font-size: 20px;
   font-weight: regular;
   margin-right: 20px;
+  margin-bottom: 12px;
 }
 
 .nav__item:last-child {
@@ -38,4 +39,12 @@ a.selected {}
 
 .nav__item > a {
   color: #555;
+}
+
+.hero {
+}
+
+.hero__image {
+  width: 100%;
+  height: auto;
 }
