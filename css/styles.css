@@ -1,0 +1,94 @@
+/* SITE-WIDE */
+
+body {
+  padding: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-weight: 900;
+}
+
+a:active, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+}
+
+.site-title {
+  font-family: "Poiret One";
+  font-size: 45px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: -1%;
+}
+
+.site-title a {
+  color: black;
+}
+
+.site-title h1 {
+  margin-top: 0px;
+  padding-bottom: 18px;
+}
+
+.nav {
+  text-align: center;
+  margin-top: -1%;
+  margin-bottom: -1%;
+}
+
+.nav__item {
+  display: inline-block;
+  font-family: "Poiret One";
+  font-size: 20px;
+  font-weight: regular;
+  margin-right: 20px;
+  line-height: 1.5em;
+}
+
+.nav__item:last-child {
+  margin-right: 0px;
+}
+
+.nav__item > a {
+  color: #555;
+  padding-bottom: 2px;
+}
+
+.nav__item > a:hover {
+  border-bottom: 2px solid #AAA;
+}
+
+h3 {
+  font-family: "Poiret One";
+  font-weight: 900;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* HOME */
+
+.hero {}
+
+.hero__image {}
+
+.info-block {
+  padding: 10px;
+  background-color: #DDD;
+  overflow: visible;
+  text-align: justify;
+}
+
