@@ -65,7 +65,12 @@ a:active, a:visited {
   padding-bottom: 2px;
 }
 
-.nav__item > a:hover {
+.nav__item:hover {
+  border-bottom: 2px solid #AAA;
+}
+
+.nav__item--active {
+  font-weight: 900;
   border-bottom: 2px solid #AAA;
 }
 
