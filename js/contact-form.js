@@ -1,8 +1,7 @@
 function submitForm(form) {
-  var url = $('.contact-form form').attr('action');
+  var $form = $('.contact-form form');
+  var url = $form.attr('action');
   var params = $(form).serialize();
-  console.log(url);
-  console.log(params);
 
   $.ajax({
     url: url,
@@ -10,7 +9,11 @@ function submitForm(form) {
     data: params,
     dataType: "json",
     success: function(result) {
-      alert('Yahoo!');
+      $form.find("input[type=text], input[type=email], textarea").val('');
+      alert('Your message was sent. Thank you!');
+    },
+    error: function(error) {
+      console.error(error);// TODO: handle error
     }
   });
 }
@@ -19,7 +22,7 @@ $(document).ready(function(){
   $('.contact-form form').validate({
     rules: {
       name: { required: true },
-      _replyto: { required: true },
+      email: { required: true },
       _subject: { required: true },
       message: { required: true }
     },
@@ -32,20 +35,4 @@ $(document).ready(function(){
     submitHandler: submitForm
   });
 });
-
-// {
-//       var url = $('.contact-form form').attr('action');
-//       var params = $(form).serialize();
-
-//       $.ajax ({
-//         type: "POST",
-//         url: theUrl,
-//         data: params,
-//         processData: false,
-//         async: false,
-//         success: function(result) {
-//             //if (data != "") alert (data);
-//         }
-//       });
-//     }
 
