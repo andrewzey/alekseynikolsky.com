@@ -19,6 +19,10 @@ function submitForm(form) {
 }
 
 $(document).ready(function(){
+  // Set email attribute of form async to avoid bot spamming
+  var contactform = document.getElementById('email-form');
+  contactform.setAttribute('action', 'http://formspree.io/' + 'alekseynikolsky+webcontactform' + '@' + 'gmail' + '.' + 'com');
+
   $('.contact-form form').validate({
     rules: {
       name: { required: true },
@@ -35,4 +39,3 @@ $(document).ready(function(){
     submitHandler: submitForm
   });
 });
-

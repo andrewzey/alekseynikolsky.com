@@ -19,6 +19,7 @@
   padding: 5px 0 5px 8px;
   margin-bottom: 10px;
   border: none;
+  border-radius: 0;
 }
 
 .contact-form textarea {
@@ -31,6 +32,7 @@
   padding: 5px 0 5px 8px;
   margin-bottom: 10px;
   border: none;
+  border-radius: 0;
 }
 
 .contact-form button {
@@ -57,9 +59,9 @@
 }
 
 #name-error, #_replyto-error, #_subject-error, #message-error {
+  display: inline-block;
   color: red;
-  margin-top: -4px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */

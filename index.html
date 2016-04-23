@@ -104,14 +104,13 @@
     <div class="col span_9_of_12">
       <div class="contact-form">
         <h3>Contact Aleksey</h3>
-        <form action="https://formspree.io/alekseynikolsky+webcontactform@gmail.com"
-        method="POST">
-          <input type="text" name="name" placeholder="Your Name" required>
-          <input type="email" name="email" placeholder="Your Email Address" required>
-          <input type="text" name="_subject" placeholder="Your Subject Line" required/>
-          <textarea name="message" placeholder="Your Message" required></textarea>
+        <form id="email-form" method="POST">
+          <input tabindex="1" type="text" name="name" placeholder="Your Name" required>
+          <input tabindex="2" type="email" name="email" placeholder="Your Email Address" required>
+          <input tabindex="3" type="text" name="_subject" placeholder="Your Subject Line" required/>
+          <textarea tabindex="4" name="message" placeholder="Your Message" required></textarea>
           <!-- This input field is a honeypot to catch spam bots -->
-          <input type="text" name="_gotcha" style="display:none" />
+          <input tabindex="5" type="text" name="_gotcha" style="display:none" />
           <button type="submit" value="Send">Send</button>
         </form>
       </div>
