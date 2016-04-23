@@ -1,0 +1,75 @@
+.contact-form {
+
+}
+
+.contact-form form {
+  position: relative;
+}
+
+.contact-form h3 {
+  text-align: left;
+}
+
+.contact-form input {
+  display: block;
+  width: 40%;
+  background-color: #DDD;
+  line-height: 1.8em;
+  padding: 5px 0 5px 8px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.contact-form textarea {
+  display: block;
+  width: 70%;
+  min-height: 200px;
+  background-color: #DDD;
+  line-height: 1.8em;
+  padding: 5px 0 5px 8px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.contact-form button {
+  display: block;
+  background-color: #3498db; /* Blue */
+  border: none;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+#name-error, #_replyto-error, #_subject-error, #message-error {
+  color: red;
+  margin-top: -4px;
+  margin-bottom: 4px;
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+  .contact-form input {
+    width: 98%;
+  }
+  .contact-form textarea {
+    width: 98%;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
