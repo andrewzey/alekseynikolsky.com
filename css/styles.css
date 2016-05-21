@@ -3,6 +3,7 @@
 body {
   padding: 2em;
   font-family: Helvetica, Arial;
+  line-height: 1.4em;
 }
 
 a {
@@ -31,6 +32,7 @@ a:active, a:visited {
   text-transform: uppercase;
   text-align: center;
   margin-bottom: -1%;
+  line-height: 1em;
 }
 
 .site-title a {
@@ -105,12 +107,10 @@ footer {
   right: 25px;
   bottom: 25px;
   padding: 14px;
-  line-height: 1.4em;
   box-sizing: border-box;
 }
 
 .hero__floating-block p {
-  line-height: 1.4em;
   margin-bottom: .6em;
 }
 
@@ -140,5 +140,20 @@ footer {
   overflow: visible;
   text-align: justify;
   font-size: 0.9em;
-  line-height: 1.4em;
+}
+
+.research-section {
+  padding: 10px;
+}
+
+.research-section__thumbnail {
+  position: relative;
+  float: left;
+  width: 125px;
+  height: 125px;
+  margin-right: 12px;
+}
+
+.research-section h4:hover {
+  color: #3498db;
 }
