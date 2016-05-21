@@ -2,6 +2,7 @@
 
 body {
   padding: 2em;
+  font-family: Helvetica, Arial;
 }
 
 a {
@@ -92,14 +93,32 @@ footer {
 
 /* HOME */
 
-.hero {}
+.hero {
+  position: relative;
+  overflow: hidden;
+}
 
 .hero__image {}
 
+.hero__floating-block {
+  position: absolute;
+  background-color: rgba(249,241,220,.88);
+  width: 50%;
+  right: 25px;
+  bottom: 25px;
+  padding: 14px;
+}
+
+.hero__floating-block p {
+  line-height: 1.2em;
+  margin-bottom: .6em;
+}
+
 .info-block {
-  padding: 10px;
+  padding: 15px;
   background-color: #DDD;
   overflow: visible;
   text-align: justify;
+  font-size: 0.9em;
+  line-height: 1.4em;
 }
-
