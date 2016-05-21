@@ -91,8 +91,6 @@ footer {
   font-weight: 500;
 }
 
-/* HOME */
-
 .hero {
   position: relative;
   overflow: hidden;
@@ -107,11 +105,33 @@ footer {
   right: 25px;
   bottom: 25px;
   padding: 14px;
+  line-height: 1.4em;
+  box-sizing: border-box;
 }
 
 .hero__floating-block p {
-  line-height: 1.2em;
+  line-height: 1.4em;
   margin-bottom: .6em;
+}
+
+.hero__floating-block--research {}
+
+@media only screen and (max-width: 1140px) {
+  .hero__floating-block--research {
+    width: 95%;
+    margin: 0 auto 0;
+    right: 0px;
+    left: 0px;
+  }
+}
+
+/*  GO FULL WIDTH BELOW 820 PIXELS */
+@media only screen and (max-width: 944px) {
+  .hero__floating-block--research {
+    position: relative;
+    width: 100%;
+    margin: 34px 0 0 0;
+  }
 }
 
 .info-block {
